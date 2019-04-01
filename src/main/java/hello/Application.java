@@ -8,9 +8,6 @@ import org.springframework.core.env.Environment;
 @SpringBootApplication
 public class Application {
 
-    @Autowired
-    private Environment env;
-
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }

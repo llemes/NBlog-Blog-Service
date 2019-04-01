@@ -12,7 +12,7 @@ public class BlogPostController {
     private BlogPostBLL blogPostBLL = new BlogPostBLL();
 
     @RequestMapping("/blog/get")
-    public BlogPost getBlogPost(@RequestParam(value="id")int id) {
-        return new BlogPost();
+    public int getBlogPost(@RequestParam(value="id")int id) {
+        return id;
     }
 }
